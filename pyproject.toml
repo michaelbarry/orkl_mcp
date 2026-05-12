@@ -1,0 +1,11 @@
+[project]
+name = "orkl-mcp"
+version = "0.1.0"
+description = "MCP server exposing the ORKL threat intelligence library (https://orkl.eu) to LLM clients."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=3.2.4",
+    "httpx>=0.28",
+    "pydantic>=2.0",
+]
