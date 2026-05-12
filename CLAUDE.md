@@ -14,11 +14,12 @@ There used to be a second implementation at `server.py` (low-level `mcp.server` 
 
 ## Running
 
-The server runs over stdio for an MCP client to spawn — there is no HTTP server to start. A working venv is already set up at `.venv/` with the minimal deps (`mcp`, `httpx`, `fastmcp`, `pydantic`).
+The server runs over stdio for an MCP client to spawn — there is no HTTP server to start. From a fresh clone, run `uv sync` first to materialize `.venv/` from `uv.lock`; then:
 
 ```bash
-# Working server
 .venv/bin/python orkl_final.py
+# or
+uv run python orkl_final.py
 ```
 
 To smoke-test the MCP handshake manually, pipe JSON-RPC into stdin:
