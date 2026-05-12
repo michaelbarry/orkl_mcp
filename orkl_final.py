@@ -1,7 +1,6 @@
 import httpx
 from fastmcp import FastMCP
-from pydantic import Field
-from typing import Optional, List, Dict
+from typing import Dict
 
 # 1. Initialize FastMCP - the high-level framework
 mcp = FastMCP(
